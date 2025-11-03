@@ -1,0 +1,127 @@
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QCM - Donne ton avis (Cuisine)</title>
+<style>
+:root{--accent:#e76f51;--bg:#fff;--card:#fff;--muted:#666;--gradient:linear-gradient(135deg,#f9d423,#ff4e50)}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:0;background:#f7f7f9;color:#111}
+header{background:var(--gradient);padding:50px 20px;text-align:center;color:#fff;position:relative;overflow:hidden}
+header::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:url('https://images.unsplash.com/photo-1604908177541-269c6d065660?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;opacity:0.15}
+header h1{margin:0;font-size:36px;z-index:1;position:relative}
+header p.lead{margin-top:12px;font-size:18px;z-index:1;position:relative}
+.container{max-width:900px;margin:18px auto;padding:12px}
+.card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(0,0,0,0.06);margin-bottom:14px}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;transition:0.3s}
+.btn:hover{background:#ff6f5e}
+.actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:20px}
+footer{font-size:13px;color:var(--muted);text-align:center;margin:18px 0}
+.small{font-size:13px}
+</style>
+</head>
+<body>
+  <header>
+  
+  
+    <div class="container" style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
+    <img src="fafa.jpg" alt="Ma photo" style="width:120px;height:120px;border-radius:50%;object-fit:cover;">
+  
+  </div>
+    <div class="container">
+      <h1>Partage ton avis — QCM Cuisine Anonymous Cooker</h1>
+      <p class="lead"> Merci de me suivre !
+Votre soutien et votre fidélité me motivent chaque jour à créer des recettes encore plus savoureuses.
+Vos avis comptent énormément : chaque retour me permet d’améliorer mes plats et de vous proposer des recettes que vous allez adorer !
+Aide-moi à créer des recettes qui te plaisent ! </p>
+    </div>
+  </header>
+
+  <main class="container">
+    
+	
+	<form action="https://formspree.io/f/mldokzzq" method="POST" class="qcm-form">
+  <h3>QCM Cuisine 🍰</h3>
+
+ <div class="grid">
+          <div class="question">
+            <label>1) Quel type de recettes préfères-tu ?</label><br>
+            <label><input type="radio" name="type_recette" value="rapide" required> Rapide (≤ 30 min)</label><br>
+            <label><input type="radio" name="type_recette" value="healthy"> Healthy / Légères</label><br>
+            <label><input type="radio" name="type_recette" value="gourmandes"> Gourmandes / Confort</label><br>
+            <label><input type="radio" name="type_recette" value="traditionnelles"> Traditionnelles</label><br>
+          </div>
+
+          <div class="question">
+            <label>2) Fréquence souhaitée des nouvelles recettes ?</label><br>
+            <label><input type="radio" name="freq" value="hebdo" required> Hebdomadaire</label><br>
+            <label><input type="radio" name="freq" value="bihebdo"> Toutes les 2 semaines</label><br>
+            <label><input type="radio" name="freq" value="mensuel"> Mensuel</label><br>
+          </div>
+
+          <div class="question">
+            <label>3) Préfères-tu des vidéos ou des recettes écrites ?</label><br>
+            <label><input type="radio" name="format" value="video" required> Vidéo courte</label><br>
+            <label><input type="radio" name="format" value="texte"> Texte + photos</label><br>
+            <label><input type="radio" name="format" value="both"> Les deux</label><br>
+          </div>
+
+          <div class="question">
+            <label>4) Niveau de difficulté ?</label><br>
+            <label><input type="radio" name="niveau" value="facile" required> Facile</label><br>
+            <label><input type="radio" name="niveau" value="intermediaire"> Intermédiaire</label><br>
+            <label><input type="radio" name="niveau" value="avance"> Avancé</label><br>
+          </div>
+
+          <div class="question">
+            <label>5) Quel est ton plat préféré parmi :</label><br>
+            <label><input type="radio" name="plat" value="thieboudienne" required> Thieboudienne</label><br>
+            <label><input type="radio" name="plat" value="yassa"> Yassa</label><br>
+            <label><input type="radio" name="plat" value="maafe"> Maafé</label><br>
+            <label><input type="radio" name="plat" value="poisson_grille"> Poisson grillé</label><br>
+          </div>
+
+          <div class="question">
+            <label>6) Quels ingrédients veux-tu voir plus souvent ? (choix multiple)</label><br>
+            <label><input type="checkbox" name="ingred" value="poisson"> Poisson</label><br>
+            <label><input type="checkbox" name="ingred" value="poulet"> Poulet</label><br>
+            <label><input type="checkbox" name="ingred" value="legumes"> Légumes</label><br>
+            <label><input type="checkbox" name="ingred" value="vegan"> Options vegan</label><br>
+          </div>
+
+          <div class="question">
+            <label>7) Budget préféré par recette ?</label><br>
+            <label><input type="radio" name="budget" value="petit" required> Petit (économique)</label><br>
+            <label><input type="radio" name="budget" value="moyen"> Moyen</label><br>
+            <label><input type="radio" name="budget" value="elevé"> Élevé</label><br>
+          </div>
+
+          <div class="question">
+            <label>8) Un commentaire ou idée ? (optionnel)</label>
+            <textarea name="comment" rows="3" style="width:100%;padding:8px;border-radius:8px;border:1px solid #ddd"></textarea>
+          </div>
+        </div>
+
+
+
+  <label>Votre e-mail (optionnel) :</label><br>
+  <input type="email" name="email" placeholder="votre@email.com"><br><br>
+
+  <button type="submit" class="btn">Envoyer mes réponses</button>
+</form>
+
+    <section id="how" class="card">
+      <h4>Comment ça marche ?</h4>
+      <ol>
+        <li>En cliquant sur le bouton ci-dessus, tu seras redirigé vers mon Google Form officiel.</li>
+        <li>Réponds aux quelques questions (cela prend 2 à 3 minutes).</li>
+        <li>À la fin, tu verras un message de remerciement 💌.</li>
+        <li>Tes réponses seront enregistrées automatiquement et je les recevrai directement.</li>
+      </ol>
+    </section>
+
+    <footer>
+      <p class="muted">Merci de ton soutien ❤️ Tes retours m’aident à créer des recettes encore plus savoureuses !</p>
+    </footer>
+  </main>
+</body>
+</html>
